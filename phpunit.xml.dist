@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    bootstrap="tests/_files/bootstrap.php"
+    colors="true"
+    cacheResult="false"
+    stderr="true"
+    convertDeprecationsToExceptions="true"
+    verbose="true"
+    >
+    <testsuites>
+         <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

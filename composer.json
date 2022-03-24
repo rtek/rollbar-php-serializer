@@ -1,0 +1,28 @@
+{
+    "name": "rtek/rollbar-php-serializer",
+    "description": "Patch rollbar-php to inject serialization",
+    "license": "proprietary",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=8.1",
+        "psr/http-message": "^1.0",
+        "rollbar/rollbar": "^3.0"
+    },
+    "require-dev": {
+        "guzzlehttp/psr7": "^2.2",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload":{
+        "psr-4": {
+            "Rtek\\Rollbar\\": "src"
+        },
+        "files": ["src/Patch/utilities-shim.php"]
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "Rtek\\Rollbar\\Tests\\": "tests"
+        }
+    }
+}
